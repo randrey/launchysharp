@@ -3,6 +3,7 @@
 *.ncb
 *.suo
 *.user
+*.sdf
 
 LaunchySharp/LaunchySharpPlugin/moc_*
 **/TestResult.xml

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="General">
+      <UniqueIdentifier>{3f7c9dcc-6ad8-4c8d-bad3-91097f702f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Header Files">
+      <UniqueIdentifier>{c841d476-3737-4e47-8e51-6dea236aff05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Source Files">
+      <UniqueIdentifier>{751c7429-bf5f-4653-8af3-cd632d0f7831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LaunchySharpCpp">
+      <UniqueIdentifier>{809540d6-9c38-4c5a-b6e8-e4bf8c95c1d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LaunchySharpCpp\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="LaunchySharpCpp\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="LaunchySharpCpp\Tests">
+      <UniqueIdentifier>{657d25da-21cc-4f40-a4be-1bc7f289b242}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\LaunchySharp\General\Precompiled.h">
+      <Filter>General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\testing\EmptyLaunchyPlugin.h">
+      <Filter>LaunchySharpCpp\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\testing\EmptyLaunchySharpPlugin.h">
+      <Filter>LaunchySharpCpp\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\testing\FakeOptionsWidgetHandler.h">
+      <Filter>LaunchySharpCpp\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\testing\FakePluginHost.h">
+      <Filter>LaunchySharpCpp\Tests</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\LaunchySharp\General\Precompiled.cpp">
+      <Filter>General\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\CatItem.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\CatItemConverter.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\CatItemFactory.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\FilePluginLoader.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\InputData.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\InputDataFactory.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\InputDataListConverter.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\LaunchyPaths.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\LaunchySharpPluginWrapper.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\LaunchySharpPluginWrapperFactory.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\PluginHost.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\PluginLoader.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\StringConversions.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\testing\CatItemFactoryTest.cpp">
+      <Filter>LaunchySharpCpp\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\testing\FilePluginLoaderTest.cpp">
+      <Filter>LaunchySharpCpp\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\testing\InputDataTest.cpp">
+      <Filter>LaunchySharpCpp\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\testing\LaunchySharpPluginWrapperTest.cpp">
+      <Filter>LaunchySharpCpp\Tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

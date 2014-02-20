@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A3241D7C-5192-4EC6-9ECC-1D665C2A2A63}</ProjectGuid>
+    <RootNamespace>LaunchySharp</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CustomBuildStep>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(SolutionDir)LaunchySharp;$(SolutionDir)LaunchySharp/Launchy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;LAUNCHY_SHARP_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>QtCored4.lib;QtGuid4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CustomBuildStep>
+      <Command />
+    </CustomBuildStep>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(SolutionDir)LaunchySharp;$(SolutionDir)LaunchySharp/Launchy;$(SolutionDir)LaunchySharp/ezlogger;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;QT_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_PLUGIN;QT_NO_DEBUG;QT_SHARED;LAUNCHY_SHARP_BUILD_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Launchy#API">
+      <HintPath>..\LaunchySharpAPI\bin\Release\Launchy#API.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="General\Precompiled.h" />
+    <ClInclude Include="Launchy\catalog.h" />
+    <ClInclude Include="Launchy\Plugin.h" />
+    <ClInclude Include="Launchy\plugin_interface.h" />
+    <ClInclude Include="LaunchySharpCpp\AssemblyResolver.h" />
+    <ClInclude Include="LaunchySharpCpp\CatItem.h" />
+    <ClInclude Include="LaunchySharpCpp\CatItemConverter.h" />
+    <ClInclude Include="LaunchySharpCpp\CatItemFactory.h" />
+    <ClInclude Include="LaunchySharpCpp\FilePluginLoader.h" />
+    <ClInclude Include="LaunchySharpCpp\IFilePluginLoader.h" />
+    <ClInclude Include="LaunchySharpCpp\InputData.h" />
+    <ClInclude Include="LaunchySharpCpp\InputDataFactory.h" />
+    <ClInclude Include="LaunchySharpCpp\InputDataListConverter.h" />
+    <ClInclude Include="LaunchySharpCpp\IOptionsWidgetHandler.h" />
+    <ClInclude Include="LaunchySharpCpp\IPluginLoader.h" />
+    <ClInclude Include="LaunchySharpCpp\LaunchyPaths.h" />
+    <ClInclude Include="LaunchySharpCpp\LaunchySharpPluginWrapper.h" />
+    <ClInclude Include="LaunchySharpCpp\LaunchySharpPluginWrapperFactory.h" />
+    <ClInclude Include="LaunchySharpCpp\OptionsWidgetHandler.h" />
+    <ClInclude Include="LaunchySharpCpp\PluginFactory.h" />
+    <ClInclude Include="LaunchySharpCpp\PluginHost.h" />
+    <ClInclude Include="LaunchySharpCpp\PluginLoader.h" />
+    <ClInclude Include="LaunchySharpCpp\StringConversions.h" />
+    <ClInclude Include="LaunchySharpCpp\TestPlugin.h" />
+    <ClInclude Include="LaunchySharpCpp\Win32WindowWrapperWidget.h" />
+    <ClInclude Include="LaunchySharpPlugin\DialogLocker.h" />
+    <ClInclude Include="LaunchySharpPlugin\InPluginLocker.h" />
+    <CustomBuild Include="LaunchySharpPlugin\LaunchyPluginWrapper.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd "$(ProjectDir)"
+"%25QTDIR%25\bin\moc" -I$(ProjectDir) -fPrecompiled.h -f%(Filename)%(Extension)  -o%(RootDir)%(Directory)\moc_%(Filename).cpp %(FullPath)
+popd
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%QTDIR%\bin\moc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd "$(ProjectDir)"
+"%25QTDIR%25\bin\moc" -I$(ProjectDir) -fPrecompiled.h -f%(Filename)%(Extension)  -o%(RootDir)%(Directory)\moc_%(Filename).cpp %(FullPath)
+popd
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%QTDIR%\bin\moc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="LaunchySharpPlugin\Plugin.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd "$(ProjectDir)"
+"%25QTDIR%25\bin\moc" -I$(ProjectDir) -fPrecompiled.h -f%(Filename)%(Extension)  -o%(RootDir)%(Directory)\moc_%(Filename).cpp %(FullPath)
+popd
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%QTDIR%\bin\moc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RootDir)%(Directory)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Filename)%(Extension)</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd "$(ProjectDir)"
+"%25QTDIR%25\bin\moc" -I$(ProjectDir) -fPrecompiled.h -f%(Filename)%(Extension)  -o%(RootDir)%(Directory)\moc_%(Filename).cpp %(FullPath)
+popd
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%QTDIR%\bin\moc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RootDir)%(Directory)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="LaunchySharpPlugin\PluginManager.h" />
+    <ClInclude Include="LaunchySharpPlugin\PluginManagerFactory.h" />
+    <ClInclude Include="ezlogger\ezlogger.hpp" />
+    <ClInclude Include="ezlogger\ezlogger_format_policy.hpp" />
+    <ClInclude Include="ezlogger\ezlogger_headers.hpp" />
+    <ClInclude Include="ezlogger\ezlogger_macros.hpp" />
+    <ClInclude Include="ezlogger\ezlogger_misc.hpp" />
+    <ClInclude Include="ezlogger\ezlogger_output_policy.hpp" />
+    <ClInclude Include="ezlogger\ezlogger_verbosity_level_policy.hpp" />
+    <ClInclude Include="ezlogger\launchysharp_ezlogger_adapter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="General\Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\AssemblyResolver.cpp" />
+    <ClCompile Include="LaunchySharpCpp\CatItem.cpp" />
+    <ClCompile Include="LaunchySharpCpp\CatItemConverter.cpp" />
+    <ClCompile Include="LaunchySharpCpp\CatItemFactory.cpp" />
+    <ClCompile Include="LaunchySharpCpp\FilePluginLoader.cpp" />
+    <ClCompile Include="LaunchySharpCpp\InputData.cpp" />
+    <ClCompile Include="LaunchySharpCpp\InputDataFactory.cpp" />
+    <ClCompile Include="LaunchySharpCpp\InputDataListConverter.cpp" />
+    <ClCompile Include="LaunchySharpCpp\LaunchyPaths.cpp" />
+    <ClCompile Include="LaunchySharpCpp\LaunchySharpPluginWrapper.cpp" />
+    <ClCompile Include="LaunchySharpCpp\LaunchySharpPluginWrapperFactory.cpp" />
+    <ClCompile Include="LaunchySharpCpp\OptionsWidgetHandler.cpp" />
+    <ClCompile Include="LaunchySharpCpp\PluginHost.cpp" />
+    <ClCompile Include="LaunchySharpCpp\PluginLoader.cpp" />
+    <ClCompile Include="LaunchySharpCpp\StringConversions.cpp" />
+    <ClCompile Include="LaunchySharpCpp\Win32WindowWrapperWidget.cpp" />
+    <ClCompile Include="LaunchySharpPlugin\DialogLocker.cpp" />
+    <ClCompile Include="LaunchySharpPlugin\InPluginLocker.cpp" />
+    <ClCompile Include="LaunchySharpPlugin\LaunchyPluginWrapper.cpp" />
+    <ClCompile Include="LaunchySharpPlugin\Plugin.cpp" />
+    <ClCompile Include="LaunchySharpPlugin\PluginManager.cpp" />
+    <ClCompile Include="LaunchySharpPlugin\PluginManagerFactory.cpp" />
+    <ClCompile Include="LaunchySharpPlugin\moc_LaunchyPluginWrapper.cpp" />
+    <ClCompile Include="LaunchySharpPlugin\moc_Plugin.cpp" />
+    <ClCompile Include="ezlogger\launchysharp_ezlogger_adapter.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

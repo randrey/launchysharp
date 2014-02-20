@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E17BDB9-B3DA-47FF-ADDF-0384A2266D9C}</ProjectGuid>
+    <RootNamespace>LaunchySharpUnitTests</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(SolutionDir)LaunchySharp;$(SolutionDir)LaunchySharp/Launchy;$(SolutionDir)LaunchySharpUnitTests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>QtCored4.lib;QtGuid4.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(SolutionDir)LaunchySharp;$(SolutionDir)LaunchySharp/Launchy;$(SolutionDir)LaunchySharp/ezlogger;$(SolutionDir)LaunchySharpUnitTests;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;DISABLE_LOGGING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>QtCore4.lib;QtGui4.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(ProjectDir)..\lib\NUnit\bin\net-2.0\nunit-console-x86.exe" "$(TargetPath)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Launchy#API">
+      <HintPath>..\LaunchySharpAPI\bin\Release\Launchy#API.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\lib\NUnit\bin\net-2.0\framework\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks">
+      <HintPath>..\lib\NUnit\bin\net-2.0\framework\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\LaunchySharp\General\Precompiled.h" />
+    <ClInclude Include="LaunchySharpCpp\testing\EmptyLaunchyPlugin.h" />
+    <ClInclude Include="LaunchySharpCpp\testing\EmptyLaunchySharpPlugin.h" />
+    <ClInclude Include="LaunchySharpCpp\testing\FakeOptionsWidgetHandler.h" />
+    <ClInclude Include="LaunchySharpCpp\testing\FakePluginHost.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\LaunchySharp\General\Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\CatItem.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\CatItemConverter.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\CatItemFactory.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\FilePluginLoader.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\InputData.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\InputDataFactory.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\InputDataListConverter.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\LaunchyPaths.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\LaunchySharpPluginWrapper.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\LaunchySharpPluginWrapperFactory.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\PluginHost.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\PluginLoader.cpp" />
+    <ClCompile Include="..\LaunchySharp\LaunchySharpCpp\StringConversions.cpp" />
+    <ClCompile Include="LaunchySharpCpp\testing\CatItemFactoryTest.cpp" />
+    <ClCompile Include="LaunchySharpCpp\testing\FilePluginLoaderTest.cpp" />
+    <ClCompile Include="LaunchySharpCpp\testing\InputDataTest.cpp" />
+    <ClCompile Include="LaunchySharpCpp\testing\LaunchySharpPluginWrapperTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LaunchySharp\LaunchySharpPlugin.vcxproj">
+      <Project>{a3241d7c-5192-4ec6-9ecc-1d665c2a2a63}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

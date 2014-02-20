@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="LaunchySharp">
+      <UniqueIdentifier>{ae2d8363-e99b-4234-85e0-89040d5740c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General">
+      <UniqueIdentifier>{7a4a6527-bdff-4af6-9da6-ef1a519ce563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Header Files">
+      <UniqueIdentifier>{2e5a5be9-79e0-49a2-9786-3e43e34071ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="General\Source Files">
+      <UniqueIdentifier>{7174a6a3-eeb1-4c47-912a-2965e3b0aedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Launchy">
+      <UniqueIdentifier>{7a408e30-6ae9-4f3f-90b8-15695dc5914e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Launchy\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Launchy\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="LaunchySharpCpp">
+      <UniqueIdentifier>{984459f4-3140-41fe-93f0-b8876fca2c9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LaunchySharpCpp\Header Files">
+      <UniqueIdentifier>{01d67413-9496-4e99-b29a-e986c9200ae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LaunchySharpCpp\Source Files">
+      <UniqueIdentifier>{c8dc6431-9295-43b7-9af0-d49a11c2c6f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LaunchySharpPlugin">
+      <UniqueIdentifier>{20ffad79-4ca6-43ec-8320-ca65065600fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LaunchySharpPlugin\Header Files">
+      <UniqueIdentifier>{567f15d3-9383-4af0-8120-6c65d54eba6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LaunchySharpPlugin\Source Files">
+      <UniqueIdentifier>{31ce2966-a184-46ab-bea3-7f0f87c262aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LaunchySharpPlugin\Generated">
+      <UniqueIdentifier>{f32437dc-a79c-49e9-80e9-6c326f2c7f1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ezlogger">
+      <UniqueIdentifier>{c68e7365-109b-4008-9e05-28696c1b981e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="General\Precompiled.h">
+      <Filter>General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Launchy\catalog.h">
+      <Filter>Launchy\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Launchy\Plugin.h">
+      <Filter>Launchy\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Launchy\plugin_interface.h">
+      <Filter>Launchy\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\AssemblyResolver.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\CatItem.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\CatItemConverter.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\CatItemFactory.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\FilePluginLoader.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\IFilePluginLoader.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\InputData.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\InputDataFactory.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\InputDataListConverter.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\IOptionsWidgetHandler.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\IPluginLoader.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\LaunchyPaths.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\LaunchySharpPluginWrapper.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\LaunchySharpPluginWrapperFactory.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\OptionsWidgetHandler.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\PluginFactory.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\PluginHost.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\PluginLoader.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\StringConversions.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\TestPlugin.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpCpp\Win32WindowWrapperWidget.h">
+      <Filter>LaunchySharpCpp\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpPlugin\DialogLocker.h">
+      <Filter>LaunchySharpPlugin\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpPlugin\InPluginLocker.h">
+      <Filter>LaunchySharpPlugin\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpPlugin\PluginManager.h">
+      <Filter>LaunchySharpPlugin\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LaunchySharpPlugin\PluginManagerFactory.h">
+      <Filter>LaunchySharpPlugin\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ezlogger\ezlogger.hpp">
+      <Filter>ezlogger</Filter>
+    </ClInclude>
+    <ClInclude Include="ezlogger\ezlogger_format_policy.hpp">
+      <Filter>ezlogger</Filter>
+    </ClInclude>
+    <ClInclude Include="ezlogger\ezlogger_headers.hpp">
+      <Filter>ezlogger</Filter>
+    </ClInclude>
+    <ClInclude Include="ezlogger\ezlogger_macros.hpp">
+      <Filter>ezlogger</Filter>
+    </ClInclude>
+    <ClInclude Include="ezlogger\ezlogger_misc.hpp">
+      <Filter>ezlogger</Filter>
+    </ClInclude>
+    <ClInclude Include="ezlogger\ezlogger_output_policy.hpp">
+      <Filter>ezlogger</Filter>
+    </ClInclude>
+    <ClInclude Include="ezlogger\ezlogger_verbosity_level_policy.hpp">
+      <Filter>ezlogger</Filter>
+    </ClInclude>
+    <ClInclude Include="ezlogger\launchysharp_ezlogger_adapter.h">
+      <Filter>ezlogger</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="General\Precompiled.cpp">
+      <Filter>General\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\AssemblyResolver.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\CatItem.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\CatItemConverter.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\CatItemFactory.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\FilePluginLoader.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\InputData.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\InputDataFactory.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\InputDataListConverter.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\LaunchyPaths.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\LaunchySharpPluginWrapper.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\LaunchySharpPluginWrapperFactory.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\OptionsWidgetHandler.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\PluginHost.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\PluginLoader.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\StringConversions.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpCpp\Win32WindowWrapperWidget.cpp">
+      <Filter>LaunchySharpCpp\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpPlugin\DialogLocker.cpp">
+      <Filter>LaunchySharpPlugin\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpPlugin\InPluginLocker.cpp">
+      <Filter>LaunchySharpPlugin\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpPlugin\LaunchyPluginWrapper.cpp">
+      <Filter>LaunchySharpPlugin\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpPlugin\Plugin.cpp">
+      <Filter>LaunchySharpPlugin\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpPlugin\PluginManager.cpp">
+      <Filter>LaunchySharpPlugin\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpPlugin\PluginManagerFactory.cpp">
+      <Filter>LaunchySharpPlugin\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpPlugin\moc_LaunchyPluginWrapper.cpp">
+      <Filter>LaunchySharpPlugin\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="LaunchySharpPlugin\moc_Plugin.cpp">
+      <Filter>LaunchySharpPlugin\Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="ezlogger\launchysharp_ezlogger_adapter.cpp">
+      <Filter>ezlogger</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="LaunchySharpPlugin\LaunchyPluginWrapper.h">
+      <Filter>LaunchySharpPlugin\Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="LaunchySharpPlugin\Plugin.h">
+      <Filter>LaunchySharpPlugin\Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
