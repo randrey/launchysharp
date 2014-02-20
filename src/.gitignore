@@ -1,0 +1,8 @@
+**/Debug/**
+**/Release/**
+*.ncb
+*.suo
+*.user
+
+LaunchySharp/LaunchySharpPlugin/moc_*
+**/TestResult.xml
