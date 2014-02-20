@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="windows-1255"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="9.00"
 	Name="LaunchySharpUnitTests"
 	ProjectGUID="{4E17BDB9-B3DA-47FF-ADDF-0384A2266D9C}"
 	RootNamespace="LaunchySharpUnitTests"
 	Keyword="ManagedCProj"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
@@ -65,6 +66,8 @@
 				AdditionalLibraryDirectories="&quot;$(QTDIR)\lib&quot;;&quot;$(OutDir)&quot;"
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -84,9 +87,6 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -141,6 +141,8 @@
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="&quot;$(QTDIR)\lib&quot;;&quot;$(OutDir)&quot;"
 				GenerateDebugInformation="true"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -162,9 +164,6 @@
 				Name="VCAppVerifierTool"
 			/>
 			<Tool
-				Name="VCWebDeploymentTool"
-			/>
-			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine="&quot;$(ProjectDir)..\lib\NUnit\bin\net-2.0\nunit-console-x86.exe&quot; &quot;$(TargetPath)&quot;"
 			/>
@@ -174,18 +173,22 @@
 		<AssemblyReference
 			RelativePath="..\lib\NUnit\bin\net-2.0\framework\nunit.framework.dll"
 			AssemblyName="nunit.framework, Version=2.5.10.11092, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL"
+			MinFrameworkVersion="131072"
 		/>
 		<AssemblyReference
 			RelativePath="..\lib\NUnit\bin\net-2.0\framework\nunit.mocks.dll"
 			AssemblyName="nunit.mocks, Version=2.5.10.11092, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL"
+			MinFrameworkVersion="131072"
 		/>
 		<AssemblyReference
 			RelativePath="System.dll"
 			AssemblyName="System, Version=2.0.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+			MinFrameworkVersion="131072"
 		/>
 		<AssemblyReference
-			RelativePath="..\LaunchySharpAPI\bin\Release\Launchy#API.dll"
+			RelativePath="..\launchysharpapi\bin\release\launchy#api.dll"
 			AssemblyName="Launchy#API, Version=1.1.0.0, processorArchitecture=IA64"
+			MinFrameworkVersion="0"
 		/>
 	</References>
 	<Files>

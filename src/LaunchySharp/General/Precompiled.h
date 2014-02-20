@@ -32,6 +32,6 @@
 
 #include <cstdio>
 #include <cstdlib>
-#include "launchysharp_ezlogger_adapter.h"
+#include "ezlogger/launchysharp_ezlogger_adapter.h"
 
 #pragma warning( pop )

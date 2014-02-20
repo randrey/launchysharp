@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="windows-1255"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8.00"
+	Version="9.00"
 	Name="LaunchySharpPlugin"
 	ProjectGUID="{A3241D7C-5192-4EC6-9ECC-1D665C2A2A63}"
 	RootNamespace="LaunchySharp"
 	Keyword="ManagedCProj"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
@@ -62,11 +63,13 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="QtCored4.lib QtGuid4.lib $(NOINHERIT)"
+				AdditionalDependencies="QtCored4.lib QtGuid4.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib $(NOINHERIT)"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="&quot;$(QTDIR)\lib&quot;"
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -86,9 +89,6 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -146,6 +146,8 @@
 				AdditionalLibraryDirectories="&quot;$(QTDIR)\lib&quot;"
 				GenerateManifest="false"
 				GenerateDebugInformation="false"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -167,9 +169,6 @@
 				Name="VCAppVerifierTool"
 			/>
 			<Tool
-				Name="VCWebDeploymentTool"
-			/>
-			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine=""
 			/>
@@ -179,14 +178,17 @@
 		<AssemblyReference
 			RelativePath="System.dll"
 			AssemblyName="System, Version=2.0.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+			MinFrameworkVersion="131072"
 		/>
 		<AssemblyReference
 			RelativePath="..\LaunchySharpAPI\bin\Release\Launchy#API.dll"
-			AssemblyName="Launchy#API, Version=1.1.0.0, processorArchitecture=IA64"
+			AssemblyName="Launchy#API, Version=1.2.0.0, processorArchitecture=IA64"
+			MinFrameworkVersion="0"
 		/>
 		<AssemblyReference
 			RelativePath="System.Windows.Forms.dll"
 			AssemblyName="System.Windows.Forms, Version=2.0.0.0, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL"
+			MinFrameworkVersion="131072"
 		/>
 	</References>
 	<Files>
@@ -566,7 +568,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\..\launchysharp_svn\src\LaunchySharp\ezlogger\launchysharp_ezlogger_adapter.cpp"
+				RelativePath=".\ezlogger\launchysharp_ezlogger_adapter.cpp"
 				>
 			</File>
 			<File
