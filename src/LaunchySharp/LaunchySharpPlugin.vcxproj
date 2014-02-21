@@ -103,9 +103,6 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Reference Include="Launchy#API">
-      <HintPath>..\LaunchySharpAPI\bin\Release\Launchy#API.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
@@ -216,6 +213,11 @@ popd
     <ClCompile Include="LaunchySharpPlugin\moc_LaunchyPluginWrapper.cpp" />
     <ClCompile Include="LaunchySharpPlugin\moc_Plugin.cpp" />
     <ClCompile Include="ezlogger\launchysharp_ezlogger_adapter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LaunchySharpAPI\LaunchySharpAPI.csproj">
+      <Project>{c368d931-c9b4-4573-a676-4f59d51115b9}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

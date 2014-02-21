@@ -4,6 +4,7 @@
 *.suo
 *.user
 *.sdf
+*.opensdf
 
 LaunchySharp/LaunchySharpPlugin/moc_*
 **/TestResult.xml
