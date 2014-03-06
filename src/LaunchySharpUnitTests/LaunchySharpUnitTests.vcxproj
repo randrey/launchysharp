@@ -92,7 +92,8 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>"$(ProjectDir)..\lib\NUnit\bin\net-2.0\nunit-console-x86.exe" "$(TargetPath)"</Command>
+      <Command>xcopy $(QTDIR)\bin\QtCore4.dll $(TargetDir)
+"$(ProjectDir)..\lib\NUnit\bin\net-2.0\nunit-console-x86.exe" "$(TargetPath)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
