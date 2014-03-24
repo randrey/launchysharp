@@ -1,3 +1,6 @@
+Version 1.3.0:
+ * .Net 4.0 support
+
 Version 1.2.0:
  * Plugins can also be loaded from %APPDATA%\Launchy\plugins. Thanks to romech.
  * Added new API function: setPath
