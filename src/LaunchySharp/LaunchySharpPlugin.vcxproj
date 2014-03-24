@@ -146,6 +146,7 @@
     <ClInclude Include="LaunchySharpCpp\Win32WindowWrapperWidget.h" />
     <ClInclude Include="LaunchySharpPlugin\DialogLocker.h" />
     <ClInclude Include="LaunchySharpPlugin\InPluginLocker.h" />
+    <ClInclude Include="resources\resource.h" />
     <CustomBuild Include="LaunchySharpPlugin\LaunchyPluginWrapper.h">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Filename)%(Extension)</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd "$(ProjectDir)"
@@ -224,6 +225,9 @@ popd
     <ProjectReference Include="..\LaunchySharpAPI\LaunchySharpAPI.csproj">
       <Project>{c368d931-c9b4-4573-a676-4f59d51115b9}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\launchysharp.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

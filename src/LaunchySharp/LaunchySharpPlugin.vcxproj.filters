@@ -158,6 +158,9 @@
     <ClInclude Include="ezlogger\launchysharp_ezlogger_adapter.h">
       <Filter>ezlogger</Filter>
     </ClInclude>
+    <ClInclude Include="resources\resource.h">
+      <Filter>Launchy\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="General\Precompiled.cpp">
@@ -246,5 +249,8 @@
     <CustomBuild Include="LaunchySharpPlugin\Plugin.h">
       <Filter>LaunchySharpPlugin\Header Files</Filter>
     </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\launchysharp.rc" />
   </ItemGroup>
 </Project>
