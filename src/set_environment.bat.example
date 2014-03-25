@@ -1,3 +1,0 @@
-set QMAKESPEC=win32-msvc2005
-set QTDIR=D:\sdk\qt-everywhere-opensource-src-4.6.2
-set PATH=%QTDIR%\bin;%PATH%
