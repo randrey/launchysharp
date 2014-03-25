@@ -4,7 +4,7 @@ This is a fork of [Launchy# project][launchy#kshahar] updated to support .Net 4 
 
 For detailed information about Launchy# please check its [original repository][launchy#kshahar].
 
-Binnaries
+Binaries
 -------
 [Available via GitHub Releases](https://github.com/randrey/launchysharp/releases/tag/v1.3)
 
