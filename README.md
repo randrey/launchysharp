@@ -6,7 +6,7 @@ For detailed information about Launchy# please check its [original repository][l
 
 Binnaries
 -------
-[placeholder]
+[Available via GitHub Releases](https://github.com/randrey/launchysharp/releases/tag/v1.3)
 
 Building
 -------
