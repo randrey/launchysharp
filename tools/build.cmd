@@ -5,7 +5,7 @@ if "%QTDIR%" == "" (
   goto :eof
 )
 
-xcopy /y /r /i /e /v qt\*.* %QTDIR%\
+xcopy /y /r /e qt\* %QTDIR%\
 set PATH = %PATH%;%QTDIR%\bin
 pushd
 cd /d %QTDIR%
