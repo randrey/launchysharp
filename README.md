@@ -59,8 +59,6 @@ License
   - Launchy# is licensed under the terms of the GNU General Public License version 2.0 (GPLv2).
   - The Launchy# .NET plugin API is licensed under the terms of the GNU Lesser General Public License version 2.0 (LGPLv2).
 
-  *(I would prefer to use MIT license, but I doubt it's ok to ignore original one.)*
-
   [launchy#kshahar]: https://github.com/kshahar/launchysharp
   [launchy]: http://launchy.net
   
